@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = GroupPermission::VERSION
   spec.authors       = ["sanket_redkar"]
   spec.email         = ["sanket.redkar20@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = %q{Manage the groups permission}
+  spec.summary       = %q{This gem set the group permission without database.}
   spec.homepage      = ""
   spec.license       = "MIT"
 
