@@ -6,11 +6,11 @@ TODO: Write a gem description
 
 Add this line to your application's Gemfile:
 
-    gem 'group_permission'
+    gem 'group_permission', git: 'https://github.com/sanket-redkar/group_permisson.git'
 
 And then execute:
 
-    $ bundle
+    $ bundle install
 
 Or install it yourself as:
 
@@ -18,7 +18,34 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+###Add role_name:string field to your Group Model
+
+```ruby
+def self.up
+  create_table :group do |t|
+    t.string :name
+
+    # Group permission column
+    t.string :role_name
+
+    t.timestamps
+  end
+end
+```
+####Generate permissions files in application with following generator
+
+```ruby
+bundle exec rails g the_group install
+```
+
+###Add one line in your Grop Model
+
+```ruby
+class Group < ActiveRecord::Base
+    include Group::Permission
+    
+end
+```
 
 ## Contributing
 

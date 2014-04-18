@@ -1,5 +1,5 @@
-module TheRole
-  module Role
+module Groups
+  module Permission
 
     def role_hash
       ::Permission.get_permissions[role_name]
