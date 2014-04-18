@@ -5,7 +5,7 @@ require 'group_permission/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "group_permission"
-  spec.version       = GroupPermission::VERSION
+  spec.version       = '0.0.1'
   spec.authors       = ["sanket_redkar"]
   spec.email         = ["sanket.redkar20@gmail.com"]
   spec.description   = %q{TODO: Write a gem description}
