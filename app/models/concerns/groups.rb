@@ -17,7 +17,7 @@ module Groups
       section_name = section_name.to_s
       rule_name = rule_name.to_s
 
-      return true  if hash.try(:[], 'system').try(:[], 'administrator')
+      return true  if (hash.try(:[], 'system') || hash.try(:[], 'administrator'))
 
       return false unless hash[section_name]
       return false unless hash[section_name].key? rule_name
